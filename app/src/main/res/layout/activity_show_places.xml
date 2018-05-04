@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/relativeLayout1">
+        <ImageView
+            android:src="@mipmap/egypt"
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/linearLayout1"
+            android:elevation="10dp">
+            <ImageButton
+                android:src="@mipmap/back"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:id="@+id/imageButton1"
+                android:background="#00000000"
+                android:tint="#ffffffff"
+                android:scaleType="fitCenter"
+                android:baselineAlignBottom="true"
+                android:padding="13dp" />
+            <TextView
+                android:textColor="#fff"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView1"
+                android:gravity="center"
+                android:paddingLeft="-50dp"
+                android:text="Name" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2"
+            android:background="#ff153057"
+            android:alpha=".8" />
+    </RelativeLayout>
+    <ListView
+        android:dividerHeight="5dp"
+        android:divider="#FFF"
+        android:layout_margin="10dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list" />
+</LinearLayout>
